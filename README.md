@@ -9,7 +9,8 @@ Who should use Divorce Cortana?
 You have to be a tech savey person. You need to have knowledge how to use System Restore to get your system back to previous state.
 
 What are the current side effects?
-The search in start menu gets disabled: - Pin your common apps to the start menu.
+
+The search in start menu gets disabled: You can pin your common apps to the start menu or find a start menu replacement software.
 My Window 10 pro start menu gets disabled the first time I open it, then the second click on start it works
 My Window 10 Ent start menu is disable after a restart. I run a powershell command to fix it, must run every restart
 
@@ -32,4 +33,4 @@ and that will also disable any subdomains.
 
 Additional Steps you can take for privacy:
 Install CCleaner and create a scheduled task with /AUTO
- -- Disable additional plugins used for telemtry
+ -- Disable additional plugins in Firefox used for telemtry
