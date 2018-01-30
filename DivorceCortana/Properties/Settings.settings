@@ -1,0 +1,249 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DivorceCortana.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ServicesToDelete" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;AdobeFlashPlayerUpdateSvc&lt;/string&gt;
+  &lt;string&gt;DiagTrack&lt;/string&gt;
+  &lt;string&gt;dmwappushservice&lt;/string&gt;
+  &lt;string&gt;DPS&lt;/string&gt;
+  &lt;string&gt;ibtsiva&lt;/string&gt;
+  &lt;string&gt;igfxCUIService1.0.0.0&lt;/string&gt;
+  &lt;string&gt;igfxCUIService2.0.0.0&lt;/string&gt;
+  &lt;string&gt;nvsvc&lt;/string&gt;
+  &lt;string&gt;NvTelemetryContainer&lt;/string&gt;
+  &lt;string&gt;RetailDemo&lt;/string&gt;
+  &lt;string&gt;TrkWks&lt;/string&gt;
+  &lt;string&gt;WdiServiceHost&lt;/string&gt;
+  &lt;string&gt;Net Driver HPZ12&lt;/string&gt;
+  &lt;string&gt;Pml Driver HPZ12&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="ServicesToDisable" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;AdobeFlashPlayerUpdateSvc&lt;/string&gt;
+  &lt;string&gt;AppReadiness&lt;/string&gt;
+  &lt;string&gt;AppXSvc&lt;/string&gt;
+  &lt;string&gt;BcmBtRSupport&lt;/string&gt;
+  &lt;string&gt;Browser&lt;/string&gt;
+  &lt;string&gt;CDPSvc&lt;/string&gt;
+  &lt;string&gt;CDPUserSvc&lt;/string&gt;
+  &lt;string&gt;cphs&lt;/string&gt;
+  &lt;string&gt;DevicesFlowUserSvc&lt;/string&gt;
+  &lt;string&gt;diagnosticshub.standardcollector.service&lt;/string&gt;
+  &lt;string&gt;diagsvc&lt;/string&gt;
+  &lt;string&gt;DiagTrack&lt;/string&gt;
+  &lt;string&gt;dmwappushservice&lt;/string&gt;
+  &lt;string&gt;DoSvc&lt;/string&gt;
+  &lt;string&gt;DPS&lt;/string&gt;
+  &lt;string&gt;DsSvc&lt;/string&gt;
+  &lt;string&gt;FrameServer&lt;/string&gt;
+  &lt;string&gt;HomeGroupListener&lt;/string&gt;
+  &lt;string&gt;HomeGroupProvider&lt;/string&gt;
+  &lt;string&gt;ibtsiva&lt;/string&gt;
+  &lt;string&gt;icssvc&lt;/string&gt;
+  &lt;string&gt;igfxCUIService2.0.0.0&lt;/string&gt;
+  &lt;string&gt;InstallService&lt;/string&gt;
+  &lt;string&gt;lfsvc&lt;/string&gt;
+  &lt;string&gt;MapsBroker&lt;/string&gt;
+  &lt;string&gt;MessagingService&lt;/string&gt;
+  &lt;string&gt;MpsSvc&lt;/string&gt;
+  &lt;string&gt;NcbService&lt;/string&gt;
+  &lt;string&gt;NvTelemetryContainer&lt;/string&gt;
+  &lt;string&gt;OneSyncSvc&lt;/string&gt;
+  &lt;string&gt;PimIndexMaintenanceSvc&lt;/string&gt;
+  &lt;string&gt;RetailDemo&lt;/string&gt;
+  &lt;string&gt;RmSvc&lt;/string&gt;
+  &lt;string&gt;Sense&lt;/string&gt;
+  &lt;string&gt;SensorDataService&lt;/string&gt;
+  &lt;string&gt;SensorService&lt;/string&gt;
+  &lt;string&gt;SensrSvc&lt;/string&gt;
+  &lt;string&gt;spectrum&lt;/string&gt;
+  &lt;string&gt;SysMain&lt;/string&gt;
+  &lt;string&gt;TabletInputService&lt;/string&gt;
+  &lt;string&gt;TokenBroker&lt;/string&gt;
+  &lt;string&gt;TrkWks&lt;/string&gt;
+  &lt;string&gt;UnistoreSvc&lt;/string&gt;
+  &lt;string&gt;UserDataSvc&lt;/string&gt;
+  &lt;string&gt;WbioSrvc&lt;/string&gt;
+  &lt;string&gt;WdiServiceHost&lt;/string&gt;
+  &lt;string&gt;WdiSystemHost&lt;/string&gt;
+  &lt;string&gt;WdNisSvc&lt;/string&gt;
+  &lt;string&gt;wercplsupport&lt;/string&gt;
+  &lt;string&gt;WerSvc&lt;/string&gt;
+  &lt;string&gt;WinDefend&lt;/string&gt;
+  &lt;string&gt;wisvc&lt;/string&gt;
+  &lt;string&gt;wlidsvc&lt;/string&gt;
+  &lt;string&gt;WMPNetworkSvc&lt;/string&gt;
+  &lt;string&gt;WpnService&lt;/string&gt;
+  &lt;string&gt;WpnUserService&lt;/string&gt;
+  &lt;string&gt;wudfsvc&lt;/string&gt;
+  &lt;string&gt;xbgm&lt;/string&gt;
+  &lt;string&gt;XblAuthManager&lt;/string&gt;
+  &lt;string&gt;XblGameSave&lt;/string&gt;
+  &lt;string&gt;XboxGipSvc&lt;/string&gt;
+  &lt;string&gt;XboxNetApiSvc&lt;/string&gt;
+  &lt;string&gt;odserv&lt;/string&gt;
+  &lt;string /&gt;
+  &lt;string /&gt;
+  &lt;string /&gt;
+  &lt;string /&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="FoldersToDelete" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;C:\Windows\System32\Tasks\Microsoft\Windows\DiskDiagnostic&lt;/string&gt;
+  &lt;string&gt;C:\Windows\System32\Tasks\Microsoft\Windows\Customer Experience Improvement Program&lt;/string&gt;
+  &lt;string&gt;C:\Windows\System32\Tasks\Microsoft\Windows\Diagnosis&lt;/string&gt;
+  &lt;string&gt;C:\Windows\System32\Tasks\Microsoft\Windows\Windows Media Sharing&lt;/string&gt;
+  &lt;string&gt;C:\Windows\System32\Tasks\Microsoft\Windows\GWX&lt;/string&gt;
+  &lt;string&gt;C:\Windows\System32\Tasks\Microsoft\Windows\Windows Error Reporting&lt;/string&gt;
+  &lt;string&gt;C:\Windows\System32\Tasks\Microsoft\Windows\Power Efficiency Diagnostics&lt;/string&gt;
+  &lt;string&gt;C:\Windows\System32\Tasks\Microsoft\Windows\Feedback&lt;/string&gt;
+  &lt;string /&gt;
+  &lt;string /&gt;
+  &lt;string /&gt;
+  &lt;string /&gt;
+  &lt;string /&gt;
+  &lt;string /&gt;
+  &lt;string /&gt;
+  &lt;string /&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="FilesToDelete" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;C:\Windows\System32\Tasks\Adobe Flash Player Updater&lt;/string&gt;
+  &lt;string /&gt;
+  &lt;string /&gt;
+  &lt;string /&gt;
+  &lt;string /&gt;
+  &lt;string /&gt;
+  &lt;string /&gt;
+  &lt;string /&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="FilesToDisable" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;C:\Windows\System32\generaltel.dll&lt;/string&gt;
+  &lt;string&gt;C:\Windows\System32\diagtrack.dll&lt;/string&gt;
+  &lt;string&gt;C:\Windows\System32\diagtrack_win.dll&lt;/string&gt;
+  &lt;string&gt;C:\Windows\System32\diagtrack_wininternal.dll&lt;/string&gt;
+  &lt;string&gt;C:\Windows\System32\UtcResources.dll&lt;/string&gt;
+  &lt;string&gt;C:\Windows\System32\wsqmcons.exe&lt;/string&gt;
+  &lt;string&gt;C:\Windows\System32\WSCollect.exe&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="FoldersToDisable" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;C:\Windows\System32\DiagSvcs&lt;/string&gt;
+  &lt;string&gt;C:\Windows10Upgrade&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="TasksToDelete" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Adobe Flash Player Updater&lt;/string&gt;
+  &lt;string&gt;OneDrive Standalone Update Task v2&lt;/string&gt;
+  &lt;string&gt;Open URL by RoboForm&lt;/string&gt;
+  &lt;string&gt;Run RoboForm TaskBar Icon&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="TaskFoldersToDelete" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;\Microsoft\Windows Defender&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\Application Experience&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\ApplicationData&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\CloudExperienceHost&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\Customer Experience Improvement Program&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\Diagnosis&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\DiskDiagnostic&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\GWX&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\Power Efficiency Diagnostics&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\Windows Activation Technologies&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\Windows Error Reporting&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\Windows Media Sharing&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\Wininet&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\Feedback\Siuf&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\Feedback&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\RetailDemo&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\Maintenance\WinSAT&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\RAC&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="FoldersToDisableAndRemoveFiles" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;%userprofile%\AppData\Roaming\vstelemetry&lt;/string&gt;
+  &lt;string&gt;%userprofile%\AppData\Roaming\Mozilla\Firefox\Crash Reports&lt;/string&gt;
+  &lt;string&gt;C:\ProgramData\Microsoft\Diagnosis&lt;/string&gt;
+  &lt;string&gt;c:\programdata\microsoft\windows\wer&lt;/string&gt;
+  &lt;string&gt;C:\programdata\microsoft\windows\Caches&lt;/string&gt;
+  &lt;string&gt;C:\programdata\microsoft\windows\Power Efficiency Diagnostics&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DeregisterDll" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;C:\Program Files\Microsoft Office\Office15\GROOVEEX.DLL&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="ServicesToUnImage" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;CDPSvc&lt;/string&gt;
+  &lt;string&gt;CDPUserSvc&lt;/string&gt;
+  &lt;string&gt;diagnosticshub.standardcollector.service&lt;/string&gt;
+  &lt;string&gt;PimIndexMaintenanceSvc&lt;/string&gt;
+  &lt;string&gt;WpnUserService&lt;/string&gt;
+  &lt;string&gt;WpnService&lt;/string&gt;
+  &lt;string&gt;UserDataSvc&lt;/string&gt;
+  &lt;string&gt;OneSyncSvc&lt;/string&gt;
+  &lt;string&gt;WdiServiceHost&lt;/string&gt;
+  &lt;string&gt;WdiSystemHost&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="SystemAppsToDelete" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;CortanaListenUIApp&lt;/string&gt;
+  &lt;string&gt;DesktopLearning&lt;/string&gt;
+  &lt;string&gt;DesktopView&lt;/string&gt;
+  &lt;string&gt;EnvironmentsApp&lt;/string&gt;
+  &lt;string&gt;holocamera&lt;/string&gt;
+  &lt;string&gt;holoitemplayerapp&lt;/string&gt;
+  &lt;string&gt;InsiderHub&lt;/string&gt;
+  &lt;string&gt;Microsoft.AAD.BrokerPlugin&lt;/string&gt;
+  &lt;string&gt;Microsoft.AccountsControl&lt;/string&gt;
+  &lt;string&gt;Microsoft.BioEnrollment&lt;/string&gt;
+  &lt;string&gt;microsoft.creddialoghost&lt;/string&gt;
+  &lt;string&gt;Microsoft.LockApp&lt;/string&gt;
+  &lt;string&gt;Microsoft.MicrosoftEdge&lt;/string&gt;
+  &lt;string&gt;Microsoft.PPIProjection&lt;/string&gt;
+  &lt;string&gt;Microsoft.Windows.AppRep.ChxApp&lt;/string&gt;
+  &lt;string&gt;Microsoft.Windows.AppResolverUX&lt;/string&gt;
+  &lt;string&gt;Microsoft.Windows.AssignedAccessLockApp&lt;/string&gt;
+  &lt;string&gt;Microsoft.Windows.CloudExperienceHost&lt;/string&gt;
+  &lt;string&gt;Microsoft.Windows.ContentDeliveryManager&lt;/string&gt;
+  &lt;string&gt;Microsoft.Windows.Cortana&lt;/string&gt;
+  &lt;string&gt;Microsoft.Windows.HolographicFirstRun&lt;/string&gt;
+  &lt;string&gt;Microsoft.Windows.ModalSharePickerHost&lt;/string&gt;
+  &lt;string&gt;Microsoft.Windows.OOBENetworkCaptivePortal&lt;/string&gt;
+  &lt;string&gt;Microsoft.Windows.OOBENetworkConnectionFlow&lt;/string&gt;
+  &lt;string&gt;Microsoft.Windows.SecHealthUI&lt;/string&gt;
+  &lt;string&gt;Microsoft.Windows.SecondaryTileExperience&lt;/string&gt;
+  &lt;string&gt;Microsoft.Windows.SecureAssessmentBrowser&lt;/string&gt;
+  &lt;string&gt;Microsoft.Windows.WindowPicker&lt;/string&gt;
+  &lt;string&gt;Microsoft.XboxGameCallableUI&lt;/string&gt;
+  &lt;string&gt;ParentalControls&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

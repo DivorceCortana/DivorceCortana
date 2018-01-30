@@ -1,0 +1,32 @@
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\DivorceCortana.exe.config
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\registry\Microsoft Windows 10\Remove All User Folders From This PC 64-bit.reg
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\registry\Microsoft Windows 10\DisableOneDrive.reg
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\registry\Microsoft Windows 10\Enable Admin Shares.reg
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\registry\Microsoft Windows 10\SecurityHealthServicDisable.reg
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\DivorceCortana.exe
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\DivorceCortana.pdb
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\Microsoft.Win32.TaskScheduler.dll
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\Microsoft.Win32.TaskScheduler.xml
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\de\Microsoft.Win32.TaskScheduler.resources.dll
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\es\Microsoft.Win32.TaskScheduler.resources.dll
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\fr\Microsoft.Win32.TaskScheduler.resources.dll
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\it\Microsoft.Win32.TaskScheduler.resources.dll
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\zh-CN\Microsoft.Win32.TaskScheduler.resources.dll
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\obj\Debug\DivorceCortana.MainForm.resources
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\obj\Debug\DivorceCortana.Properties.Resources.resources
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\obj\Debug\DivorceCortana.csproj.GenerateResource.Cache
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\obj\Debug\DivorceCortana.exe
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\obj\Debug\DivorceCortana.pdb
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\registry\All\DisableLibariesFeature from save dialog 1.reg
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\registry\All\DisableLibariesFeature from save dialog 2.reg
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\registry\All\DisableLibariesFeature.reg
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\registry\All\Remove homegroups icons 1.reg
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\registry\All\Remove homegroups icons 2.reg
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\registry\All\Remove_Libraries_Desktop_Icon.reg
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\registry\All\DisableDataCollection.reg
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\registry\All\Disable_IE9_Ability_to_Pin_Sites.reg
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\registry\All\Remove Auto Run.reg
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\registry\All\Remove Open with Visual Studio.reg
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\registry\Microsoft Windows 10\Remove Telemetry Crap.reg
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\bin\Debug\registry\All\Remove Compatibility Troubleshoot Context Menu.reg
+E:\My Documents\Computer Hacks\DivorceCortana\DivorceCortana\obj\Debug\DivorceCortana.csprojResolveAssemblyReference.cache
