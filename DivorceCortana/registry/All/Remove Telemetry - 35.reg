@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessMicrophone"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessNotifications"=dword:00000002

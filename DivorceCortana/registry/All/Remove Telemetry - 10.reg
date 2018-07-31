@@ -1,0 +1,4 @@
+Windows Registry Editor Version 5.00
+
+[KEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableWindowsSpotlightFeatures"=dword:00000001

@@ -19,6 +19,10 @@
   &lt;string&gt;WdiServiceHost&lt;/string&gt;
   &lt;string&gt;Net Driver HPZ12&lt;/string&gt;
   &lt;string&gt;Pml Driver HPZ12&lt;/string&gt;
+  &lt;string&gt;SQLTELEMETRY&lt;/string&gt;
+  &lt;string&gt;SSISTELEMETRY130&lt;/string&gt;
+  &lt;string&gt;SQLTELEMETRY$SQLEXPRESS&lt;/string&gt;
+  &lt;string&gt;SQLTELEMETRY$MSSQLSERVER&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="ServicesToDisable" Type="System.Collections.Specialized.StringCollection" Scope="User">
@@ -87,10 +91,15 @@
   &lt;string&gt;XboxGipSvc&lt;/string&gt;
   &lt;string&gt;XboxNetApiSvc&lt;/string&gt;
   &lt;string&gt;odserv&lt;/string&gt;
-  &lt;string /&gt;
-  &lt;string /&gt;
-  &lt;string /&gt;
-  &lt;string /&gt;
+  &lt;string&gt;DusmSvc&lt;/string&gt;
+  &lt;string&gt;NgcSvc&lt;/string&gt;
+  &lt;string&gt;PcaSvc&lt;/string&gt;
+  &lt;string&gt;LicenseManager&lt;/string&gt;
+  &lt;string&gt;NgcCtnrSvc&lt;/string&gt;
+  &lt;string&gt;SQLTELEMETRY&lt;/string&gt;
+  &lt;string&gt;SSISTELEMETRY130&lt;/string&gt;
+  &lt;string&gt;SQLTELEMETRY$SQLEXPRESS&lt;/string&gt;
+  &lt;string&gt;SQLTELEMETRY$MSSQLSERVER&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="FoldersToDelete" Type="System.Collections.Specialized.StringCollection" Scope="User">
@@ -137,6 +146,11 @@
   &lt;string&gt;C:\Windows\System32\UtcResources.dll&lt;/string&gt;
   &lt;string&gt;C:\Windows\System32\wsqmcons.exe&lt;/string&gt;
   &lt;string&gt;C:\Windows\System32\WSCollect.exe&lt;/string&gt;
+  &lt;string&gt;C:\Windows\System32\WerFault.exe&lt;/string&gt;
+  &lt;string&gt;C:\Windows\System32\WerFaultSecure.exe&lt;/string&gt;
+  &lt;string&gt;C:\Program Files\Microsoft SQL Server\MSSQL13.SQLEXPRESS\MSSQL\Binn\sqlceip.exe&lt;/string&gt;
+  &lt;string&gt;C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\Binn\sqlceip.exe&lt;/string&gt;
+  &lt;string&gt;C:\Program Files\Microsoft SQL Server\MSRS13.SQLEXPRESS\MSSQL\Binn\sqlceip.exe&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="FoldersToDisable" Type="System.Collections.Specialized.StringCollection" Scope="User">
@@ -153,6 +167,7 @@
   &lt;string&gt;OneDrive Standalone Update Task v2&lt;/string&gt;
   &lt;string&gt;Open URL by RoboForm&lt;/string&gt;
   &lt;string&gt;Run RoboForm TaskBar Icon&lt;/string&gt;
+  &lt;string&gt;Adobe Flash Player NPAPI Notifier&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="TaskFoldersToDelete" Type="System.Collections.Specialized.StringCollection" Scope="User">
@@ -176,6 +191,11 @@
   &lt;string&gt;\Microsoft\Windows\RetailDemo&lt;/string&gt;
   &lt;string&gt;\Microsoft\Windows\Maintenance\WinSAT&lt;/string&gt;
   &lt;string&gt;\Microsoft\Windows\RAC&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\Location&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\Autochk&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\Media Center&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\PerfTrack&lt;/string&gt;
+  &lt;string&gt;\Microsoft\Windows\SettingSync&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="FoldersToDisableAndRemoveFiles" Type="System.Collections.Specialized.StringCollection" Scope="User">
@@ -187,6 +207,7 @@
   &lt;string&gt;c:\programdata\microsoft\windows\wer&lt;/string&gt;
   &lt;string&gt;C:\programdata\microsoft\windows\Caches&lt;/string&gt;
   &lt;string&gt;C:\programdata\microsoft\windows\Power Efficiency Diagnostics&lt;/string&gt;
+  &lt;string&gt;C:\Windows\PCHEALTH&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="DeregisterDll" Type="System.Collections.Specialized.StringCollection" Scope="User">

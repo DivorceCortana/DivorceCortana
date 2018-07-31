@@ -41,6 +41,10 @@ namespace DivorceCortana.Properties {
   <string>WdiServiceHost</string>
   <string>Net Driver HPZ12</string>
   <string>Pml Driver HPZ12</string>
+  <string>SQLTELEMETRY</string>
+  <string>SSISTELEMETRY130</string>
+  <string>SQLTELEMETRY$SQLEXPRESS</string>
+  <string>SQLTELEMETRY$MSSQLSERVER</string>
 </ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection ServicesToDelete {
             get {
@@ -80,8 +84,11 @@ namespace DivorceCortana.Properties {
             "ing>\r\n  <string>WpnUserService</string>\r\n  <string>wudfsvc</string>\r\n  <string>x" +
             "bgm</string>\r\n  <string>XblAuthManager</string>\r\n  <string>XblGameSave</string>\r" +
             "\n  <string>XboxGipSvc</string>\r\n  <string>XboxNetApiSvc</string>\r\n  <string>odse" +
-            "rv</string>\r\n  <string />\r\n  <string />\r\n  <string />\r\n  <string />\r\n</ArrayOfSt" +
-            "ring>")]
+            "rv</string>\r\n  <string>DusmSvc</string>\r\n  <string>NgcSvc</string>\r\n  <string>Pc" +
+            "aSvc</string>\r\n  <string>LicenseManager</string>\r\n  <string>NgcCtnrSvc</string>\r" +
+            "\n  <string>SQLTELEMETRY</string>\r\n  <string>SSISTELEMETRY130</string>\r\n  <string" +
+            ">SQLTELEMETRY$SQLEXPRESS</string>\r\n  <string>SQLTELEMETRY$MSSQLSERVER</string>\r\n" +
+            "</ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection ServicesToDisable {
             get {
                 return ((global::System.Collections.Specialized.StringCollection)(this["ServicesToDisable"]));
@@ -154,6 +161,11 @@ namespace DivorceCortana.Properties {
   <string>C:\Windows\System32\UtcResources.dll</string>
   <string>C:\Windows\System32\wsqmcons.exe</string>
   <string>C:\Windows\System32\WSCollect.exe</string>
+  <string>C:\Windows\System32\WerFault.exe</string>
+  <string>C:\Windows\System32\WerFaultSecure.exe</string>
+  <string>C:\Program Files\Microsoft SQL Server\MSSQL13.SQLEXPRESS\MSSQL\Binn\sqlceip.exe</string>
+  <string>C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\Binn\sqlceip.exe</string>
+  <string>C:\Program Files\Microsoft SQL Server\MSRS13.SQLEXPRESS\MSSQL\Binn\sqlceip.exe</string>
 </ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection FilesToDisable {
             get {
@@ -188,6 +200,7 @@ namespace DivorceCortana.Properties {
   <string>OneDrive Standalone Update Task v2</string>
   <string>Open URL by RoboForm</string>
   <string>Run RoboForm TaskBar Icon</string>
+  <string>Adobe Flash Player NPAPI Notifier</string>
 </ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection TasksToDelete {
             get {
@@ -220,6 +233,11 @@ namespace DivorceCortana.Properties {
   <string>\Microsoft\Windows\RetailDemo</string>
   <string>\Microsoft\Windows\Maintenance\WinSAT</string>
   <string>\Microsoft\Windows\RAC</string>
+  <string>\Microsoft\Windows\Location</string>
+  <string>\Microsoft\Windows\Autochk</string>
+  <string>\Microsoft\Windows\Media Center</string>
+  <string>\Microsoft\Windows\PerfTrack</string>
+  <string>\Microsoft\Windows\SettingSync</string>
 </ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection TaskFoldersToDelete {
             get {
@@ -240,6 +258,7 @@ namespace DivorceCortana.Properties {
   <string>c:\programdata\microsoft\windows\wer</string>
   <string>C:\programdata\microsoft\windows\Caches</string>
   <string>C:\programdata\microsoft\windows\Power Efficiency Diagnostics</string>
+  <string>C:\Windows\PCHEALTH</string>
 </ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection FoldersToDisableAndRemoveFiles {
             get {

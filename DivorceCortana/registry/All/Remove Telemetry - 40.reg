@@ -1,0 +1,22 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessAccountInfo"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessCalendar"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessContacts"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessCallHistory"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessEmail"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessMessaging"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessPhone"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessRadios"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\AppPrivacy]
+"LetAppsSyncWithDevices"=dword:00000002
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessLocation"=dword:00000002

@@ -24,7 +24,7 @@ namespace DivorceCortana
 
 		private void MainForm_Load( object sender, EventArgs e )
 		{
-
+			this.CopyFirefoxChromeFile();
 
 			try
 			{
@@ -93,7 +93,6 @@ namespace DivorceCortana
 					for ( int i = 0; i < 2; i++ )
 					{
 						this.TakeOwn( folder, false );
-						this.TakeOwn2ndFolder( folder );
 
 						this.DeleteFolder( folder );
 					}
@@ -144,14 +143,12 @@ namespace DivorceCortana
 					for ( int i = 0; i < 2; i++ )
 					{
 						this.TakeOwn( FolderEnvPath, false );
-						this.TakeOwn2ndFolder( FolderEnvPath );
 
 						try
 						{
 							foreach ( string f in Directory.GetDirectories( FolderEnvPath ) )
 							{
 								this.TakeOwn( f, false );
-								this.TakeOwn2ndFolder( f );
 
 								this.DeleteFolder( f );
 							}
@@ -176,6 +173,9 @@ namespace DivorceCortana
 
 				try
 				{
+					if ( Directory.Exists( RunningFolder + "/registry/" + OSVersion ) == false )
+						Directory.CreateDirectory( RunningFolder + "/registry/" + OSVersion );
+
 					foreach ( string file in System.IO.Directory.EnumerateFiles( RunningFolder + "/registry/" + OSVersion, "*.reg", System.IO.SearchOption.AllDirectories ) )
 					{
 						try
@@ -254,88 +254,109 @@ namespace DivorceCortana
 					MessageBox.Show( ex.ToString() );
 				}
 
-
-
 				try
 				{
 					foreach ( string root in System.IO.Directory.GetDirectories( @"C:\Windows\SystemApps" ) )
 					{
-						bool IsFound = false;
-						foreach ( string item in Properties.Settings.Default.SystemAppsToDelete )
+						try
 						{
-							if ( string.IsNullOrWhiteSpace( item ) )
+							this.textBox1.Text += "---------------------------";
+							this.textBox1.Text += "Working on SystemApp: " + root;
+
+							//bool IsFound = false;
+							//foreach ( string item in Properties.Settings.Default.SystemAppsToDelete )
+							//{
+							//	if ( string.IsNullOrWhiteSpace( item ) )
+							//		continue;
+
+							//	if ( root.ToLower().Contains( item.ToLower() ) == true )
+							//	{
+							//		IsFound = true;
+							//		break;
+							//	}
+							//}
+
+							//if ( IsFound == false )
+							//{
+							//	this.textBox1.Text += string.Format( "Not Found In SystemAppsToDelete: {0}", root );
+							//	break;
+							//}
+
+							System.IO.DirectoryInfo di = new System.IO.DirectoryInfo( root );
+
+							if ( root.ToLower().Contains( "shellexperience" ) == true )
+								continue;
+							if ( root.ToLower().Contains( "fileexplorer" ) == true )
+								continue;
+							if ( root.ToLower().Contains( "filepicker" ) == true )
+								continue;
+							if ( root.ToLower().Contains( "disabled" ) == true )
 								continue;
 
-							if ( root.ToLower().Contains( item.ToLower() ) == true )
+							if ( Directory.Exists( di.FullName + "_disabled" ) == true )
 							{
-								IsFound = true;
-								break;
+								this.TakeOwn( di.FullName + "_disabled", false );
+								this.GrantAdministratorsFullControl( di.FullName + "_disabled" );
+								this.DeleteFolder( di.FullName + "_disabled" );
 							}
-						}
 
-						if ( IsFound == false )
-						{
-							this.textBox1.Text += string.Format( "Not Found In SystemAppsToDelete: {0}", root );
-							break;
-						}
-
-						System.IO.DirectoryInfo di = new System.IO.DirectoryInfo( root );
-
-						if ( root.ToLower().Contains( "shellexperience" ) == true )
-							continue;
-						if ( root.ToLower().Contains( "fileexplorer" ) == true )
-							continue;
-						if ( root.ToLower().Contains( "filepicker" ) == true )
-							continue;
-						if ( root.ToLower().Contains( "shellexperience" ) == true )
-							continue;
-						if ( root.ToLower().Contains( "disabled" ) == true )
-							continue;
-
-						if ( Directory.Exists( di.FullName + "_disabled" ) == true )
-						{
-							this.TakeOwn( di.FullName + "_disabled", false );
-							this.TakeOwn2ndFolder( di.FullName + "_disabled" );
-							this.DeleteFolder( di.FullName + "_disabled" );
-						}
-
-						this.TakeOwn( root, false );
+							this.TakeOwn( root, false );
 
 
-						List<string> SearchExtentions = new List<string>();
-						SearchExtentions.Add( "*.exe" );
-						SearchExtentions.Add( "*.dll" );
+							List<string> SearchExtentions = new List<string>();
+							SearchExtentions.Add( "*.exe" );
+							SearchExtentions.Add( "*.dll" );
 
-						foreach ( string ext in SearchExtentions )
-						{
-							foreach ( string file in System.IO.Directory.EnumerateFiles( root, ext, System.IO.SearchOption.AllDirectories ) )
+							foreach ( string ext in SearchExtentions )
 							{
-
-								this.TakeOwn( file, true );
-
-								for ( int i = 0; i < 2; i++ )
+								foreach ( string file in System.IO.Directory.EnumerateFiles( root, ext, System.IO.SearchOption.AllDirectories ) )
 								{
-									this.KillTask( file );
-									this.KillTask( @"C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\SearchUI.exe" );
 
+									this.TakeOwn( file, true );
+
+									for ( int i = 0; i < 2; i++ )
+									{
+										this.KillTask( file );
+										this.KillTask( @"C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\SearchUI.exe" );
+
+										try
+										{
+											this.RenameFolder( di.FullName, di.FullName + "_disabled" );
+										}
+										catch ( Exception ex1 )
+										{
+											this.textBox1.Text += ex1.ToString() + Environment.NewLine;
+										}
+
+									}
+								}
+							}
+
+							for ( int i = 0; i < 2; i++ )
+							{
+								this.KillTask( @"C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\SearchUI.exe" );
+
+								try
+								{
 									this.RenameFolder( di.FullName, di.FullName + "_disabled" );
+								}
+								catch ( Exception ex1 )
+								{
+									this.textBox1.Text += ex1.ToString() + Environment.NewLine;
 								}
 							}
 						}
-
-						for ( int i = 0; i < 2; i++ )
+						catch ( Exception ex2 )
 						{
-							this.KillTask( @"C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\SearchUI.exe" );
-
-							this.RenameFolder( di.FullName, di.FullName + "_disabled" );
+							this.textBox1.Text += ex2.ToString() + Environment.NewLine;
 						}
 					}
-
 				}
 				catch ( Exception ex )
 				{
 					this.textBox1.Text += ex.ToString() + Environment.NewLine;
 				}
+
 
 
 				try
@@ -454,12 +475,12 @@ namespace DivorceCortana
 
 			try
 			{
-				FileSecurity fileS = File.GetAccessControl( file );
+				FileSecurity fileSec = File.GetAccessControl( file );
 
 				SecurityIdentifier cu = new SecurityIdentifier( WellKnownSidType.WorldSid, null );
-				fileS.SetOwner( new SecurityIdentifier( WellKnownSidType.BuiltinAdministratorsSid, null ) );
+				fileSec.SetOwner( new SecurityIdentifier( WellKnownSidType.BuiltinAdministratorsSid, null ) );
 
-				File.SetAccessControl( file, fileS );
+				File.SetAccessControl( file, fileSec );
 			}
 			catch ( Exception ex )
 			{
@@ -467,13 +488,43 @@ namespace DivorceCortana
 				this.textBox1.Text += ex.ToString() + Environment.NewLine;
 			}
 		}
-		public void TakeOwn2ndFolder( string folder )
+
+		public void GrantAdministratorsFullControl( string file )
 		{
-			if ( string.IsNullOrWhiteSpace( folder ) == true )
+			if ( string.IsNullOrWhiteSpace( file ) == true )
 				return;
 
+			try
+			{
+				System.Diagnostics.Process Proc = new System.Diagnostics.Process();
+				Proc.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+				Proc.StartInfo.CreateNoWindow = false;
+				if ( System.Environment.OSVersion.Version.Major >= 6 )
+					Proc.StartInfo.Verb = "runas";
 
+
+				Proc.StartInfo.FileName = "icacls";
+				Proc.StartInfo.Arguments = string.Format( @"""{0}"" /grant Administrators:{1}F /inheritance:e /t", file, ( Directory.Exists( file ) == true ? "(OI)(CI)" : "" ) );
+				Proc.StartInfo.UseShellExecute = false;
+				Proc.StartInfo.RedirectStandardOutput = true;
+				Proc.Start();
+
+				this.textBox1.Text += string.Format( "{0} {1}{2}", Proc.StartInfo.FileName, Proc.StartInfo.Arguments, Environment.NewLine );
+
+				string output = Proc.StandardOutput.ReadToEnd();
+
+				if ( output.Contains( "vvvvvv" ) == false )
+				{
+					this.textBox1.Text += output;
+				}
+			}
+			catch ( Exception ex )
+			{
+
+				this.textBox1.Text += ex.ToString() + Environment.NewLine;
+			}
 		}
+
 		public void DenyEveryone( string file )
 		{
 			if ( string.IsNullOrWhiteSpace( file ) == true )
@@ -886,6 +937,8 @@ namespace DivorceCortana
 				return;
 			if ( string.IsNullOrWhiteSpace( dst ) == true )
 				return;
+			if ( System.IO.Directory.Exists( src ) == false )
+				return;
 
 			try
 			{
@@ -918,7 +971,6 @@ namespace DivorceCortana
 			}
 			catch ( Exception ex )
 			{
-
 				this.textBox1.Text += ex.ToString() + Environment.NewLine;
 			}
 
@@ -953,9 +1005,90 @@ namespace DivorceCortana
 			}
 		}
 
+		public void CopyFirefoxChromeFile()
+		{
+			try
+			{
+				string FolderEnvPath = Environment.ExpandEnvironmentVariables( @"%userprofile%\AppData\Roaming\Mozilla\Firefox\Profiles" );
+
+				if ( string.IsNullOrWhiteSpace( FolderEnvPath ) == true )
+					return;
+				if ( Directory.Exists( FolderEnvPath ) == false )
+					return;
+
+
+
+				foreach ( System.IO.DirectoryInfo profile in new System.IO.DirectoryInfo( FolderEnvPath ).GetDirectories() )
+				{
+					try
+					{
+						System.IO.DirectoryInfo chrome = profile.CreateSubdirectory( "chrome" );
+						System.IO.File.Copy( System.IO.Path.Combine( AppDomain.CurrentDomain.BaseDirectory, "userChrome.css" ), System.IO.Path.Combine( chrome.FullName, "userChrome.css" ), true );
+					}
+					catch ( Exception ex )
+					{
+						this.textBox1.Text += ex.ToString() + Environment.NewLine;
+					}
+					try
+					{
+						try { System.IO.Directory.Delete( System.IO.Path.Combine( profile.FullName, "crashes" ), true ); }
+						catch ( Exception ) { }
+						try { System.IO.Directory.Delete( System.IO.Path.Combine( profile.FullName, "healthreport" ), true ); }
+						catch ( Exception ) { }
+						try { System.IO.Directory.Delete( System.IO.Path.Combine( profile.FullName, "minidumps" ), true ); }
+						catch ( Exception ) { }
+						try { System.IO.Directory.Delete( System.IO.Path.Combine( profile.FullName, "saved-telemetry-pings" ), true ); }
+						catch ( Exception ) { }
+						try { System.IO.Directory.Delete( System.IO.Path.Combine( profile.FullName, "datareporting" ), true ); }
+						catch ( Exception ) { }
+					}
+					catch ( Exception ex )
+					{
+						this.textBox1.Text += ex.ToString() + Environment.NewLine;
+					}
+
+				}
+			}
+			catch ( Exception ex )
+			{
+				this.textBox1.Text += ex.ToString() + Environment.NewLine;
+			}
+		}
+
 		private void btnFind_Click( object sender, EventArgs e )
 		{
 			MessageBox.Show( "Feature coming soon." );
+		}
+		private void btnSystemAppOwnership_Click( object sender, EventArgs e )
+		{
+
+			this.textBox1.Text += Environment.NewLine + Environment.NewLine;
+
+			foreach ( string root in System.IO.Directory.GetDirectories( @"C:\Windows\SystemApps" ) )
+			{
+				try
+				{
+					System.IO.DirectoryInfo di = new System.IO.DirectoryInfo( root );
+
+					if ( root.ToLower().Contains( "shellexperience" ) == true )
+						continue;
+					if ( root.ToLower().Contains( "fileexplorer" ) == true )
+						continue;
+					if ( root.ToLower().Contains( "filepicker" ) == true )
+						continue;
+
+
+					this.TakeOwn( root, false );
+					this.GrantAdministratorsFullControl( root );
+					this.TakeOwn2ndFile( root );
+
+				}
+				catch ( Exception ex )
+				{
+					this.textBox1.Text += ex.ToString() + Environment.NewLine;
+				}
+			}
+
 		}
 
 	}
